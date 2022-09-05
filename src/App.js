@@ -1,10 +1,15 @@
 import React from 'react';
+import {BrowserRouter} from 'react-router-dom'
+import Routers from './Routers'
 
 class App extends React.Component {
   render() {
-    return (<p>TrybeTunes</p>);
+    return (
+      <BrowserRouter>
+        <Routers />
+      </BrowserRouter>
+    );
   }
-  //E lá vamos nós!
 }
 
 export default App;
